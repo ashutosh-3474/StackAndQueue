@@ -23,5 +23,9 @@ public class Main {
         Queue<Integer> queue = new Queue<>();
         queue.enqueue(5);
         queue.enqueue(6);
+
+        while (!queue.isEmpty()) {
+            System.out.println("Dequeued: " + queue.dequeue());
+        }
     }
 }

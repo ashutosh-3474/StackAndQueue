@@ -16,4 +16,16 @@ public class Queue<T> {
         list.addLast(data);
         System.out.println("Data added successfully");
     }
+
+    //Method dequeue element from queue
+    public T dequeue() {
+        if (list.isEmpty())
+            return null;
+        return list.removeFirst();
+    }
+
+    //Check if queue is empty
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
 }
