@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to the program for stack and queue");
 
+        System.out.println();
+        System.out.println("Stack:");
         Stack<Integer> stack = new Stack<>();
-
         stack.push(4);
         int top = stack.peek();
         System.out.println("Top of the stack is " + top);
@@ -16,5 +17,11 @@ public class Main {
         System.out.println("Poped element is "+ ele);
         top = stack.peek();
         System.out.println("Top of the stack is " + top);
+
+        System.out.println();
+        System.out.println("Queue:");
+        Queue<Integer> queue = new Queue<>();
+        queue.enqueue(5);
+        queue.enqueue(6);
     }
 }
