@@ -32,4 +32,9 @@ public class Stack<T> {
             return null;
         return list.removeFirst();
     }
+
+    //Check if stack is empty
+    public boolean isEmpty() {
+        return list.isEmpty();
+    }
 }
