@@ -1,0 +1,19 @@
+import java.util.LinkedList;
+
+//Stack implementation using generics
+public class Stack<T> {
+    private LinkedList<T> list; //stores the elements for the stack
+
+    //Constructor
+    public Stack()
+    {
+        list = new LinkedList<>();
+    }
+
+    //Method to push element in the stack
+    public void push(T data)
+    {
+        list.addFirst(data);
+        System.out.println(data + " pushed to the stack successfully");
+    }
+}
