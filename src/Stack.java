@@ -16,4 +16,12 @@ public class Stack<T> {
         list.addFirst(data);
         System.out.println(data + " pushed to the stack successfully");
     }
+
+    //Method to get top element of the stack
+    public T peek()
+    {
+        if (list.isEmpty())     //stack is empty
+            return null;
+        return list.getFirst();
+    }
 }

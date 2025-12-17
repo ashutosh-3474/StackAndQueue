@@ -7,6 +7,10 @@ public class Main {
         Stack<Integer> stack = new Stack<>();
 
         stack.push(4);
+        int top = stack.peek();
+        System.out.println("Top of the stack is " + top);
         stack.push(5);
+        top = stack.peek();
+        System.out.println("Top of the stack is " + top);
     }
 }
