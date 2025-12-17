@@ -24,4 +24,12 @@ public class Stack<T> {
             return null;
         return list.getFirst();
     }
+
+    //Method to pop element for the stack
+    public T pop()
+    {
+        if (list.isEmpty())
+            return null;
+        return list.removeFirst();
+    }
 }

@@ -12,5 +12,9 @@ public class Main {
         stack.push(5);
         top = stack.peek();
         System.out.println("Top of the stack is " + top);
+        int ele = stack.pop();
+        System.out.println("Poped element is "+ ele);
+        top = stack.peek();
+        System.out.println("Top of the stack is " + top);
     }
 }
